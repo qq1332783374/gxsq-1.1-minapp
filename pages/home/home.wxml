@@ -1,0 +1,66 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+  <!-- tab导航栏 -->
+  <i-tabs current="{{ current }}" color="#2b99ff" bindchange="handleChange" fixed="true">
+    <i-tab key="tab1" title="广场"></i-tab>
+    <i-tab key="tab2" title="校友圈"></i-tab>
+    <i-tab key="tab3" title="就业"></i-tab>
+  </i-tabs>
+
+  <view class="content">
+    <view class="tab1 animation-fade" wx:if="{{current == 'tab1'}}">
+      <!-- 轮播图 -->
+      <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+        <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+          <view class="swiper-item">
+            <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+            <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+          </view>
+        </swiper-item>
+      </swiper>
+      
+      <!-- 下拉列表 -->
+      <view class="selectBox">
+          <view class='com-sContent' bindtap='selectToggle'>
+            <view class='com-sTxt'>{{nowText}}</view>
+            <image src="../../images/arrows.png" alt="" class='com-sImg' animation="animationData"></image>
+          </view>
+          <view class='com-sList' wx:if="{{selectShow}}">
+            <view wx:for="{{propArray}}" data-index="{{index}}" wx:key class='com-sItem' bindtap='setText'>{{item.tabName}}</view>
+          </view>
+        </view>
+
+
+
+
+      <myTab1 mytabdata="{{myTabData}}"></myTab1>
+    </view>
+
+    <view class="tab2 animation-fade" wx:if="{{current == 'tab2'}}">
+      <myTab2 mytabdata="{{myTabData}}"></myTab2>
+      
+    </view>
+
+    <view class="tab3 animation-fade" wx:if="{{current == 'tab3'}}">
+      <view class='seek'>
+        <view class='box'>
+          <view class="cu-bar search bg-white">
+            <view class='search-form round'>
+              <text class="icon-search"></text>
+              <input type="text" placeholder="搜索就业相关..." confirm-type="search" bindinput='seekInput'></input>
+            </view>
+            <view class='action'>
+              <button class='cu-btn bg-green shadow-blur round' bindtap='seek'>搜索</button>
+            </view>
+          </view>
+        </view>
+      </view>
+      <myTab3 mytabdata="{{myTab}}"></myTab3>
+    </view>
+
+  </view>
+  
+  <!-- <view class='find'>
+    <image src='../../images/find.png'></image>
+  </view> -->
+</view>

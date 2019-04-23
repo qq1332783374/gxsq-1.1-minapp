@@ -1,0 +1,24 @@
+<view class="info">
+        
+            <view class="cu-card article">
+            <view wx:for="1" wx:key class="cu-item shadow">
+                <view class="title">广州现代信息职业技术学院</view>
+                <view class="content">
+                    <image src="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=3f9f8b06bc014a90813e41bb91763971/0bd162d9f2d3572c3057a8688f13632763d0c3c8.jpg" alt=""></image>
+                
+                <view class="desc">
+                    <view class='text-content'>广州现代信息工程职业技术学院，位于广东省广州市，是2005年经广东省人民政府批准、国家教育部备案正式成立的一所全日制普通高等院校，是广州市人力资源和社会保障局正式批准的广州市高等教育人才培训基地。</view>
+                    <view>
+                    
+                    </view>
+                </view>
+                </view>
+            </view>
+            </view>
+            <view class="cu-form-group">
+                <view class='title icon-home'>班级:</view>
+                <view class="txt">{{className}}</view>
+                
+            </view>
+      
+    </view>

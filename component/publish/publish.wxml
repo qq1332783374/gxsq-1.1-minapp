@@ -1,0 +1,42 @@
+<!--component/publish/publish.wxml-->
+<view>
+  <view class='margin-tb-sm text-center btn'>
+    <button class='cu-btn round bg-blue' bindtap="publish">发帖</button>
+  </view>
+  <view class="modal" wx:if="{{pushmodal}}">
+    <view class="dialog">
+      <view class="cu-bar bg-white">
+        <view class='action text-blue' bindtap="hideModal">取消</view>
+        <view>发布到校友圈</view>
+        <view class='action text-green' bindtap="pushinfo">发布</view>
+      </view>
+      <view class='padding-xl'>
+
+        <view class="cu-form-group">
+          <view class='title'>标题</view>
+          <input type="text" placeholder="加个标题呦" bindinput='inputValue'></input>
+        </view>
+        <view class="cu-form-group margin-top">
+          <textarea placeholder="说点什么吧" maxlength="-1" placeholder-class='placeholder' bindinput='textValue'></textarea>
+        </view>
+
+
+        <view class="com-selectBox">
+          <view class='com-sContent' bindtap='selectToggle'>
+            <view class='com-sTxt'>{{nowText}}</view>
+            <image src="../../images/arrows.png" alt="" class='com-sImg' animation="animationData"></image>
+          </view>
+          <view class='com-sList' wx:if="{{selectShow}}">
+            <view wx:for="{{propArray}}" data-index="{{index}}" wx:key class='com-sItem' bindtap='setText'>{{item.tabName}}</view>
+          </view>
+        </view>
+
+
+
+
+
+
+      </view>
+    </view>
+  </view>
+</view>

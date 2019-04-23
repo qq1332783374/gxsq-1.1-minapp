@@ -1,0 +1,18 @@
+<view class="register">
+  <view class="register-info">
+    <view class="title">登录广现社区</view>
+    <view class="input-info">
+      <view class="info-text">
+        <text class="icon-people"></text>
+        <input type="text" placeholder="请输入学号" bindinput='getNameValue' value='{{stuNO}}'></input>
+      </view>
+      <view class="info-password">
+        <text class="icon-attention"></text>
+        <input type="password" placeholder="请输入密码" bindinput='getPasswordValue' value='{{password}}'></input>
+      </view>
+    </view>
+    <view class="register-btn">
+      <button class="btn" bindtap="register">登录</button>
+    </view>
+  </view>
+</view>

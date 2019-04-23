@@ -1,0 +1,8 @@
+/* pages/user/grade/grade.wxss */
+.head{
+        width: 100%;
+        padding: 30px;
+        background:#2b99ff;
+        font-size: 20px;
+        color: white;
+    }

@@ -1,0 +1,24 @@
+<!--component/card/card.wxml-->
+<view class="card">
+
+    <view class="card-item">
+    
+        <view class="header">
+            <view class="title">
+                <text class="bolder">{{textContent.postTitle}}</text>
+            </view>
+            
+        </view>
+
+        <view class="content">
+            <view class="desc">
+                <view class="text-conetnt">
+                    {{textContent.postContent}}
+                </view>
+                <view class="date">
+                   2019/04/04
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

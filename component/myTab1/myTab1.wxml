@@ -1,0 +1,18 @@
+<!--component/myTab1/myTab1.wxml-->
+<view class="myTab1">
+
+
+    <!-- 文章列表 -->
+    <view class='list' wx:if="{{mytabdata}}">
+      <view wx:for="{{mytabdata}}" wx:key="index">
+        <navigator url="/pages/textDetail/textDetail?postUUID={{item.postUUID}}">
+          <card text-content="{{item}}"></card>
+        </navigator>
+      </view>
+    </view>
+    <view class='no-list' wx:else>
+      <text class="icon-link"></text>
+      <rich-text>暂无文章列表</rich-text>
+    </view>
+
+</view>

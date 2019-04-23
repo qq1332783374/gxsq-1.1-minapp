@@ -1,0 +1,18 @@
+<!--component/grid/grid.wxml-->
+<view class='cu-list grid col-3'>
+
+  <view class='cu-item' wx:for="{{gridList}}" wx:key="{{item.id}}">
+
+    <navigator url='{{item.url}}'>
+      <!-- <view class='{{item.icon}}'></view> -->
+      <view class='grid_icon'>
+        
+        <image src='{{item.icon}}'></image>
+        
+      </view>
+      <text>{{item.name}}</text>
+    </navigator>
+
+  </view>
+
+</view>

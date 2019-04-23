@@ -1,0 +1,25 @@
+/* pages/home/home.wxss */
+@import '../../colorui/main.wxss';
+.home .content{
+    padding-top: 45px;
+}
+.find{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 42%;
+  right: 10%;
+ 
+  
+}
+.find image{
+  width: 30px;
+  height: 30px;
+}
+ .selectBox{
+  margin-left: 70%;
+  margin-top:-20px;
+  width:100px;
+
+}
+

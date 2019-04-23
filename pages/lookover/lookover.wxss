@@ -1,0 +1,27 @@
+.headinfo image{
+  width: 100px;
+  height: 100px;
+}
+.userName{
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 10%;
+}
+.telePhone{
+  padding: 20px 20px;
+}
+.Phone{
+  font-weight: bolder;
+  font-size: 16px;
+}
+.send{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+}
+.btn{
+  width: 100%;
+  background: #2b99ff;
+  color: #fff;
+}

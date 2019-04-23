@@ -1,0 +1,70 @@
+/* pages/gridNavPage/college/college.wxss */
+
+.college {
+  padding: 10px;
+}
+
+.head {
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+}
+
+.title {
+  display: flex;
+  margin-top: 10px;
+}
+
+.title-logo {
+  width: 30%;
+  height: 85px;
+}
+
+.title-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.title-info {
+  width: 65%;
+  height: 79px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.basic {
+  width: 100%;
+  background: #fff;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.basic-title {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.basic .info {
+  width: 90%;
+  display: flex;
+  border-bottom: 1px #ddd dashed;
+  margin-bottom:20rpx;
+}
+
+.basic .info div {
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.department {
+  text-indent: 2em;
+  padding: 10px;
+}
+
+.info-title {
+  width: 70px;
+}
+
+.specialty-title {
+  width: 190px;
+}

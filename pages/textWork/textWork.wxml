@@ -1,0 +1,41 @@
+<view class="text-detail">
+  <view class="title text-black text-bold text-xl">
+    <text>{{textWork.postName || '文章标题'}}</text>
+  </view>
+
+
+  <view class="user">
+    
+    <view class="user-info">
+      <view class="user-name text-black text-bold">{{textWork.orgName || '用户名'}}</view>
+      <view class="date">2019/03/31</view>
+    </view>
+  </view>
+
+  <view class="text-content">
+    <view class="text-img" style="background-image: url(https://image.weilanwl.com/img/4x3-1.jpg); ">
+
+    </view>
+    <view class="txt" html="{{textDetail.postContent}} || '文章内容'">
+      {{textWork.orgRemark || '文章内容'}}
+    </view>
+    <view class='jobRemark'>
+         {{textWork.jobRemark}}
+    </view>
+    <view class='jobRequest'>
+      {{textWork.jobRequest}}
+    </view>
+    <view class='orgAddress'>
+      {{textWork.orgAddress}}
+    </view>
+    <view class='job'>
+      <text>{{textWork.job}}</text>
+      <text>{{textWork.salary}}</text>
+    </view>
+    <view class='linkman'>
+      <text>{{textWork.linkman}}</text>
+      <text>{{textWork.phone}}</text>
+    </view>
+  </view>
+
+  </view>

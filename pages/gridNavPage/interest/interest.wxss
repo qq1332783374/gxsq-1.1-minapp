@@ -1,0 +1,29 @@
+/* pages/gridNavPage/interest/interest.wxss */
+.notice{
+       width: 100%;
+        padding: 30px;
+        background:#2b99ff;
+        font-size: 20px;
+        color: white;
+    }
+    .notice-info{
+        margin-top: 10px;
+        padding: 0 20px;
+    }
+    .info{
+        display: flex;
+        width: 100%;
+        border-bottom: #666 1px dashed;
+        
+        
+    }
+    .info view{
+        
+        padding: 10px;
+        color: #666;
+    }
+    .txt{
+        width: 70%;
+        overflow: hidden;
+        height: 30px;
+    }

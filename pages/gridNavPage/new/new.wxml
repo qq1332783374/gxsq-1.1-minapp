@@ -1,0 +1,17 @@
+<view>
+        <view class="news">
+            学院新闻
+        </view>
+        <view class="cu-card article">
+  <view class="cu-item shadow" wx:for='{{news}}' wx:key>
+    <view class="title">{{item.title}}</view>
+    <view class="content">
+      <image src="{{item.img}}" alt=""></image>
+      <view class="desc">
+        <view class='text-content'>{{item.text}}</view>
+        
+      </view>
+    </view>
+  </view>
+</view>
+    </view>

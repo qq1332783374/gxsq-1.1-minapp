@@ -1,0 +1,103 @@
+<view class="text-detail">
+  <view class="title text-black text-bold text-xl">
+    <text>{{textDetail.postTitle || '文章标题'}}</text>
+  </view>
+
+
+  <view class="user" bindtap='lookover'>
+    <!-- 用户头像 -->
+    <view class="cu-avatar round margin-left">
+      <image src="{{headimg}}" alt=""></image>
+    </view>
+    <view class="user-info">
+      <view class="user-name text-black text-bold">{{textDetail.stuName || '用户名'}}</view>
+      <view class="date">2019/03/31</view>
+    </view>
+  </view>
+
+  <view class="text-content">
+    <view class="text-img" style="background-image: url(https://image.weilanwl.com/img/4x3-1.jpg); ">
+
+    </view>
+    <view class="txt" html="{{textDetail.postContent}} || '文章内容'">
+      {{textDetail.postContent}}
+    </view>
+
+  </view>
+
+  <view class="comment">
+    <view class="header">
+      <view class="title">
+        <text class="icon-comment lg text-blue"></text>
+        <text class="text-bold">评论</text>
+      </view>
+      <view class="add-comment">
+        <text bindtap="showMoadl1">我要评论</text>
+        <text class="icon-right"></text>
+      </view>
+    </view>
+    <view class="comment-list">
+
+      <view class="list-item" wx:for='{{discuss}}' wx:key='index' data-index='index'>
+        <!-- 用户头像 -->
+
+        <!-- 评论内容 -->
+        <view class="item-comment-list">
+          <view class="main">
+            <view class="comment-info">
+              <text class="name item-name text-bold text-lg">{{item.stuNameA}} <text class='reply'>回复了</text> {{item.stuNameB}}</text>
+              <text class="icon-new" style="float: right;" bindtap="showMoadl" data-index='{{index}}'></text>
+            </view>
+            <view class="content">
+              <view>{{item.discussContent}}</view>
+              <!-- 评论回复 -->
+
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+
+      <view class="cu-modal {{isModalShow1?'show':''}}">
+        <view class="cu-dialog">
+          <view class="cu-bar bg-white">
+            <view class="action text-blue">
+              <span bindtap="hideMoadl">取消</span>
+            </view>
+            <view class="content text-bold">
+              <span>添加评论</span>
+            </view>
+            <view class="action text-green">
+              <span bindtap="addComment">确定</span>
+            </view>
+          </view>
+          <view class="text-grey" style="color: #666;">
+            <textarea name="comment" style="width: 100%; font-size: 15px; text-align: left; padding: 6px 12px;" bindinput="commentsTxt" autofocus></textarea>
+          </view>
+        </view>
+      </view>
+
+      <!-- 回复modal -->
+      <view class="cu-modal {{isModalShow2?'show':''}}">
+        <view class="cu-dialog">
+          <view class="cu-bar bg-white">
+            <view class="action text-blue">
+              <span bindtap="hideMoadl">取消</span>
+            </view>
+            <view class="content text-bold">
+              <span>回复</span>
+            </view>
+            <view class="action text-green" bindtap="reply">
+              <span>确定</span>
+            </view>
+          </view>
+          <view class="text-grey" style="color: #666;">
+            <textarea name="comment" style="width: 100%; font-size: 15px; text-align: left; padding: 6px 12px;" bindinput="rpTxt" autofocus></textarea>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>

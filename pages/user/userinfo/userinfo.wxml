@@ -1,0 +1,21 @@
+<view class='userinfo'>
+  <view class='us-photo'>
+    <image src="{{userimg}}"></image>
+    <view class='us-name'>
+      <open-data type="userNickName"></open-data>
+    </view>
+  </view>
+
+  <view class="amend">
+    <view class="amend-info" wx:for='{{userinfo}}' wx:key>
+      <block>
+          <view class="amend-icon">
+          </view>
+          <view class="amend-text">
+            <text>{{item.name}}</text>
+            <text class='txt-right'>{{item.text}}</text>
+          </view>
+      </block>
+    </view>
+  </view>
+</view>

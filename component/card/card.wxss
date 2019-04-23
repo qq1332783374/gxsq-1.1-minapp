@@ -1,0 +1,39 @@
+/* component/card/card.wxss */
+.card {
+    display:block;
+    overflow:hidden;
+    
+}
+.card .card-item {
+    display:block;
+    background-color:#fff;
+    overflow:hidden;
+    border-radius:10rpx;
+    margin:30rpx 15rpx;    
+    box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.1);
+}
+.card .card-item .header {
+    font-size:30rpx;
+    font-weight:900;
+    color:#000;
+    line-height:100rpx;
+    padding:0 30rpx;
+    border-bottom: 1px solid #ddd;
+}
+.card .card-item .content .desc {
+    padding:10rpx 30rpx;
+    max-width: 100%;
+    overflow: hidden;
+    color: #666;
+}
+
+.card .card-item .content .desc .text-conetnt {
+  height: 80rpx;
+  overflow: hidden;
+}
+
+.card .card-item .content .date {
+    text-align: right;
+    padding: 10rpx 0rpx;
+    color: #999;
+}

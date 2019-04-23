@@ -1,0 +1,6 @@
+/* pages/gridNavPage/party/party.wxss */
+view{
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+}

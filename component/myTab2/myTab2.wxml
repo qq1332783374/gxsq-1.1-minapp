@@ -1,0 +1,30 @@
+<view class='myTab2'>
+
+  <!-- 公告 -->
+  <i-notice-bar>
+    2019/03/31,广现专才社区1.0版本正式启动
+  </i-notice-bar>
+
+  <!-- banner -->
+  <view class="my-banner ">
+    <view class="banner-bg shadow"></view>
+  </view>
+
+  <!-- 九宫格导航 -->
+  <grid></grid>
+
+  <!-- 文章列表 -->
+    <view class='list' wx:if="{{mytabdata}}">
+      <view wx:for="{{mytabdata}}" wx:key="index">
+        <navigator url="/pages/textDetail/textDetail?postUUID={{item.postUUID}}">
+          <card text-content="{{item}}"></card>
+        </navigator>
+      </view>
+    </view>
+    <view class='no-list' wx:else>
+      <text class="icon-link"></text>
+      <rich-text>暂无文章列表</rich-text>
+    </view>
+
+    <publish></publish>
+</view>

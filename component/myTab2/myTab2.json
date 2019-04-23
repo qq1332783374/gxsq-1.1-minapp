@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "card": "../card/card",
+    "grid": "../grid/grid",
+    "i-notice-bar": "../../static/iview/notice-bar/index",
+    "publish":"../publish/publish"
+  }
+}

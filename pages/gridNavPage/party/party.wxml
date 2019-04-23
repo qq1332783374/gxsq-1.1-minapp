@@ -1,0 +1,4 @@
+<!--pages/gridNavPage/party/party.wxml-->
+<view>
+  <text>暂无活动</text>
+</view>

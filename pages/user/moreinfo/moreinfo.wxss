@@ -1,0 +1,11 @@
+.info{
+        margin-top: 10px;
+    }
+    .info view{
+        font-size: 20px;
+    }
+    .cu-card.article>.cu-item .content .text-content{
+       height:9.8em;
+
+
+    }

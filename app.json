@@ -1,0 +1,77 @@
+{
+  "pages":[
+    
+    "pages/home/home",
+    "pages/lookover/lookover",
+    
+    "pages/chat/chat",
+    "pages/chatroom/chatroom",
+    "pages/friends/friends",
+    "pages/add_new/add_new",
+    
+    "pages/user/user",
+    "pages/user/userinfo/userinfo",
+    "pages/user/classform/classform",
+    "pages/user/grade/grade",
+    "pages/user/moreinfo/moreinfo",
+    "pages/user/register/register",
+    "pages/textDetail/textDetail",
+    "pages/textWork/textWork",
+
+    "pages/index/index",
+    "pages/logs/logs",
+    "component/test/test",
+    
+    "component/myTab1/myTab1",
+    "component/myTab2/myTab2",
+    "component/myTab3/myTab3",
+    "component/card/card",
+    "component/grid/grid",
+    "component/publish/publish",
+
+    "pages/gridNavPage/college/college",
+    "pages/gridNavPage/party/party",
+    "pages/gridNavPage/seek/seek",
+    "pages/gridNavPage/new/new",
+    "pages/gridNavPage/interest/interest",
+    "pages/gridNavPage/rests/rests"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#2b99ff",
+    "borderStyle": "white",
+
+    "list": [{
+      "text": "首页",
+      "pagePath": "pages/home/home",
+      "iconPath": "static/tabs/home.png",
+      "selectedIconPath": "static/tabs/home-active.png"
+    }, {
+      "text": "聊天",
+      "pagePath": "pages/chat/chat",
+      "iconPath": "static/tabs/chat.png",
+      "selectedIconPath": "static/tabs/chat-active.png"
+    },
+    {
+      "text": "好友",
+      "pagePath": "pages/friends/friends",
+      "iconPath": "static/tabs/friends.png",
+      "selectedIconPath": "static/tabs/friends-active.png"
+    },
+    {
+      "text": "我的",
+      "pagePath": "pages/user/user",
+      "iconPath": "static/tabs/user.png",
+      "selectedIconPath": "static/tabs/user-active.png"
+    }],
+    "position": "bottom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

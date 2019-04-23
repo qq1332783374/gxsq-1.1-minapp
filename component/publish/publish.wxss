@@ -1,0 +1,103 @@
+/* component/publish/publish.wxss */
+.btn{
+        position: fixed;
+        bottom: 10px;
+        left: 43%;
+    }
+    .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        z-index:1110;
+        display: flex;   
+        justify-content: center;
+        -ms-transform:scale(1.185);
+        transform:scale(1.185);
+        backface-visibility:hidden;
+        perspective:2000rpx;
+        background:rgba(0, 0, 0, 0.6);
+        transition:all 0.3s ease-in-out 0s;
+        pointer-events:none;
+        transition-duration:0.3s;
+        -ms-transform:scale(1);
+        transform:scale(1);
+        overflow-x:hidden;
+        overflow-y:auto;
+        pointer-events:auto;
+
+   }
+   .dialog{
+        margin-top: 70px;
+        position:relative;
+        display:inline-block;
+        vertical-align:middle;
+        margin-left:auto;
+        margin-right:auto;
+        width:90%;
+        height: 80%;
+        max-width:100%;
+        background:#f8f8f8;
+        border-radius:10rpx;
+        overflow:hidden;
+
+   }
+   .upimg{
+       width: 100%;
+       height: 75px;
+   }
+
+   .com-selectBox{
+    margin-top: 10px;
+    width: 200px;
+}
+.com-sContent{
+    border: 1px solid #e2e2e2;
+    background: white;
+    font-size: 16px;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+}
+.com-sImg{
+    position: absolute;
+    right: 10px;
+    top:18rpx;
+    width:30rpx;
+    height:30rpx;
+
+    transition: all .3s ease;
+}
+.com-sTxt{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding:0 20px 0 6px;
+    font-size: 14px;
+}
+.com-sList{
+    background: white;
+    width: inherit;
+    position: absolute;
+    border: 1px solid #e2e2e2;
+    border-top: none;
+    box-sizing: border-box;
+    z-index: 3;
+    max-height: 120px;
+    overflow: auto;
+}
+.com-sItem{
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #e2e2e2;
+    padding: 0 6px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.com-sItem:first-child{
+    border-top: none;
+}

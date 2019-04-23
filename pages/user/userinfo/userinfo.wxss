@@ -1,0 +1,52 @@
+/* pages/user/userinfo/userinfo.wxss */
+.userinfo {
+  width: 100%;
+
+  padding-top: 20rpx;
+}
+.userinfo .us-photo {
+  width: 100%;
+  height: 250rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  margin-top: 10rpx;
+  padding: 25rpx;
+}
+.userinfo .us-photo image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+  float: left;
+  margin-right: 50rpx;
+}
+
+.us-name {
+  line-height: 200rpx;
+}
+
+.amend {
+  background: #fff;
+}
+
+.amend .amend-data {
+  overflow: hidden;
+}
+
+.amend .amend-icon image {
+  width: 30rpx;
+  height: 30rpx;
+  float: right;
+  margin-right: 20rpx;
+  margin-top: 35rpx;
+}
+
+.amend .amend-text {
+  padding: 25rpx 0rpx 25rpx 30rpx;
+  border-bottom: 1rpx solid #f0eeee;
+}
+
+.txt-right {
+  float: right;
+  color: #999;
+  margin-right: 30rpx;
+}

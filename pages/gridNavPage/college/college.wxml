@@ -1,0 +1,49 @@
+<!--pages/gridNavPage/college/college.wxml-->
+<view class='college'>
+
+  <view class='cu-card article'>
+    <view class='cu-item shadow' style='margin: 0;'>
+      <view class='title'>广州现代信息职业技术学院</view>
+      <view class='content'>
+        <image src='https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=3f9f8b06bc014a90813e41bb91763971/0bd162d9f2d3572c3057a8688f13632763d0c3c8.jpg' ></image>
+
+        <view class='desc'>
+          <view class='text-content'>
+            广州现代信息工程职业技术学院，位于广东省广州市，是2005年经广东省人民政府批准、国家教育部备案正式成立的一所全日制普通高等院校，是广州市人力资源和社会保障局正式批准的广州市高等教育人才培训基地。
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='basic'>
+    <view class='basic-title'>基本信息</view>
+    <view class='basic-info'>
+      <view class='info' wx:for="{{basicinfo}}" wx:key="{{item.id}}">
+        <view style='color: #999;' class='info-title'>{{item.title}}</view>
+        <view>
+          {{item.info}}
+        </view>
+      </view>
+    </view>
+
+    <view class='basic-title'>办学规模</view>
+    <view class='department'>
+                      学院以工科为主，文、经、管、艺术协调发展。设有继续教育学院、信息工程系、机电工程系、汽车工程系、建筑工程系、工商管理系、经济贸易系、商务英语系、艺术设计系和基础课部、思想政治课教学部、继续教育学院。开设汽车电子技术、模具设计与制造、数控技术、信息安全技术、会展管理、国际会计与结算、国际贸易与金融、商务英语、数码与动漫设计等31个专业方向，为珠三角经济发展培养人才
+
+    </view>
+
+    <view class='basic-title'>专业介绍</view>
+    <view class='basic-info'>
+      <view class='info' wx:for="{{specialty}}" wx:key="{{item.id}}">
+        <view style='color: #999;' class='info-title'>{{item.title}}</view>
+        <view>
+          {{item.info}}
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+
+</view>

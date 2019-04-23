@@ -1,0 +1,12 @@
+/* pages/gridNavPage/new/new.wxss */
+.news{
+       width: 100%;
+        padding: 30px;
+        background:#2b99ff;
+        font-size: 20px;
+        color: white;
+    }
+    .cu-card.article>.cu-item .content .text-content{
+        height:6.3em;
+
+    }

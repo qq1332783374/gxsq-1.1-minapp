@@ -1,0 +1,154 @@
+/* pages/user/user.wxss */
+.user {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+    }
+    .head{
+        width: 100%;
+        background-size: 100% 100%;
+        display: flex;   
+        justify-content: center;
+        text-align: center;
+        background: #fff;
+    }
+    .headbg{
+        width: 100%;
+        height: 225px;
+        position: relative;
+    }
+    .headbg image{
+      width: 100%;
+    }
+    .avatar{
+        position: absolute;
+        top: 50%;
+        right: 40%;
+    }
+    .img{
+        
+        border-radius: 50px;
+    }
+    .name{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 20px;
+        font-size: 18px;
+       color: #fff;
+    }
+    .headimg{
+       width: 100%;
+       height: 100%;
+    }
+    .head .set{
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        width: 25px;
+        height: 25px;
+    }
+    .set img{
+        width: 25px;
+        height: 25px;
+    }
+   .head .avatar {
+       margin: 0 auto; 
+    }
+   .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        z-index:1110;
+        text-align:center;
+        -ms-transform:scale(1.185);
+        transform:scale(1.185);
+        backface-visibility:hidden;
+        perspective:2000rpx;
+        background:rgba(0, 0, 0, 0.6);
+        transition:all 0.3s ease-in-out 0s;
+        pointer-events:none;
+        transition-duration:0.3s;
+        -ms-transform:scale(1);
+        transform:scale(1);
+        overflow-x:hidden;
+        overflow-y:auto;
+        pointer-events:auto;
+
+   }
+   .modal .cu-dialog{
+        width:500rpx;
+        height:570rpx;
+        top:100rpx;
+
+   }
+   .cu-avatar{
+       overflow: hidden;
+   }
+   .cu-avatar image{
+       width: 100%;
+       height: 100%;
+   }
+  .bg-img{
+      height: 470rpx;
+      background-repeat:repeat;
+      
+  }
+  .bg-img image{
+      position: relative;
+  }
+  .bgimg{
+    width: 100%;
+    height: 82%;
+  }
+  .hideModal{
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      background: #fff;
+      border-radius: 50px;
+      width:48rpx;
+      height:46rpx;
+
+  }
+  .icon{
+      width: 25px;
+      height: 25px;
+  }
+  .more{
+      display: flex;
+      background: #fff;
+      padding: 23px;
+      width: 100%;
+      position: relative;
+  }
+  .more .more-txt{
+      margin-left: 20px;
+      -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+      font-size: 20px;
+      color: #666;
+      border-bottom: #ddd 1px solid;
+      width: 85%;
+      padding-bottom: 10px;
+  }
+ .more .right{
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+    color: #ddd;
+  }
+  .canIUse{
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+  }

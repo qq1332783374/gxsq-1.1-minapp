@@ -1,0 +1,53 @@
+page {
+  height: 100%;
+}
+
+.register {
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-info {
+  width: 80%;
+  height: 50%;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.register-info .title {
+  font-size: 18px;
+  color: #2b99ff;
+  text-align: center;
+  padding: 20px;
+}
+
+.input-info {
+  padding: 0 30px 0 30px;
+}
+
+.input-info view {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.register-btn {
+  margin-top: 20%;
+  padding: 0 30px 0 30px;
+}
+
+.register-btn .btn {
+  background: #2b99ff;
+  border: none;
+  color: #fff;
+}
+
+.input-info view text {
+  float: left;
+  font-size: 25px;
+  margin-right: 20px;
+  color: #2b99ff;
+}

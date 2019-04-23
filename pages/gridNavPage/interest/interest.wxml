@@ -1,0 +1,11 @@
+ <view>
+        <view class="notice">
+            通知公告
+        </view>
+        <view class="notice-info" wx:for="{{notice}}" wx:key>
+            <view class="info">
+                <view>{{item.time}}</view>
+                <view class="txt">{{item.text}}</view>
+            </view>
+        </view>
+    </view>

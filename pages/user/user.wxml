@@ -1,0 +1,65 @@
+<view class="user">
+  <view class="head">
+    <view class="headbg">
+      <image src='https://cdn.stocksnap.io/img-thumbs/280h/ICPTTVBVMQ.jpg'></image>
+      <view class="avatar">
+        <view class="img">
+          <view class="cu-avatar xl round" bindtap="showModal">
+            <image src='{{userinfo.userimg}}'></image>
+            <!-- <open-data type="userAvatarUrl"></open-data> -->
+          </view>
+        </view>
+
+      </view>
+      <view class="name" ref="btn">
+        <open-data type="userNickName"></open-data>
+      </view>
+      <view class="set">
+        <!-- <img src="../../../static/images/set.png" alt=""> -->
+      </view>
+    </view>
+  </view>
+
+  <view class="more-info" wx:for="{{moreinfo}}" wx:key="{{index}}">
+    <navigator url='{{item.url}}' bindtap='lsLogin'>
+      <view class="more">
+        <image src='{{item.icon}}' class="icon"></image>
+        <view class='more-txt'>{{item.info}}</view>
+        <view class="icon-right right"></view>
+      </view>
+    </navigator>
+  </view>
+
+
+  <div class="modal"  wx:if='{{modals}}'>
+    <div class="cu-dialog">
+      <div class="bg-img">
+
+        <image src="{{userinfo.userimg}}" class='bgimg'></image>
+        <div class="hideModal">
+          <div class='action' bindtap='hideModal'>
+            <text class='icon-close '></text>
+          </div>
+        </div>
+      </div>
+      <div class="cu-bar bg-white">
+        <div class='action margin-0 flex-sub  solid-left' bindtap='upimg'>修改头像</div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <button
+  wx:if="{{hide}}"
+  open-type="getUserInfo"
+  bindgetuserinfo="bindGetUserInfo"
+>
+  授权登录
+</button>
+<!-- <view wx:else>请升级微信版本</view> -->
+
+
+
+</view>

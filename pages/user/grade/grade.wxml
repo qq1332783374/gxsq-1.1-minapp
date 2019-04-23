@@ -1,0 +1,26 @@
+<view class="grade">
+       <view class="head">
+           我的成绩
+       </view>
+       
+
+
+        <view class="cu-form-group margin-top">
+    <view class='title'>学期选择</view>
+    <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+      <view class="picker">
+        {{index?picker[index]:'请选择学期'}}
+      </view>
+    </picker>
+  </view>
+
+
+        <view class="gradeinfo" wx:for='{{grade}}' wx:key>
+           <view class="cu-form-group">
+                <view class='title'>科目:</view>
+                <view class='title'>{{textbook}}</view>
+                <view class="txt">{{score}}</view>
+            </view>
+       </view>
+
+    </view>

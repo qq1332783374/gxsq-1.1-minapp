@@ -1,0 +1,39 @@
+<view class='myTab3'>
+
+    <!-- 文章列表 -->
+    <view class='list' wx:if="{{mytabdata}}">
+      <view wx:for="{{mytabdata}}" wx:key="index">
+        <navigator url="/pages/textWork/textWork?postUUID={{item.jobUUID}}">
+          <view class="card">
+
+      <view class="card-item">
+
+        <view class="header">
+          <view class="title">
+            <text class="bolder">{{item.postName}}</text>
+          </view>
+
+        </view>
+
+        <view class="content">
+          <view class="desc">
+            <view class="text-conetnt">
+              <text>{{item.orgName}}</text>
+              
+            </view>
+            <view class="date">
+              薪资：{{item.salary}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+        </navigator>
+      </view>
+    </view>
+    <view class='no-list' wx:else>
+      <text class="icon-link"></text>
+      <rich-text>暂无文章列表</rich-text>
+    </view>
+
+</view>
